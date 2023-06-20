@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="thestyle.css">
+</head>
+<body>
+    <form action="/accountcreated" method="post" id="creating">
+        <h2>Create your account here</h2>
+        <div class="input-div">
+            <h4>Full name</h4>
+            <input type="text" name="fullname">
+        </div>
+        <div class="input-div">
+            <h4>Enter a username</h4>
+            <input type="text" name="newUsername">
+        </div>
+        <div class="input-div">
+            <h4>Phone number</h4>
+            <input type="text" name="phone">
+        </div>
+        <div class="input-div">
+            <h4>Choose a password</h4>
+            <input type="password" name="newPassword">
+        </div>
+        <div id="creating-account"><button type="submit" class="customer-button">Create Account</button></div>
+        <div>
+            <% if (create == "yes") { %>
+                <p id="create-p">Your account has been created! Click <span><a id="create-span" href="/">here</a></span> to login</p>
+            <% } %>
+        </div>
+    </form>
+</body>
+</html>
